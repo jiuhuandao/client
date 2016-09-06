@@ -8,7 +8,7 @@ port = 80
 s.connect((host, port))
 
 ip, port = s.getsockname()
-print('log ip and port {} {}'.format(ip, port))
+print('log ip and port {}：{}'.format(ip, port))
 
 http_request = 'GET / HTTP/1.1\r\nhost:{}\r\nConnection: close\r\n\r\n'.format(host)
 request = http_request.encode('utf-8')
